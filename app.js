@@ -1,10 +1,13 @@
 const express=require("express");
 const request= require("request");
 const https = require('node:https');
+require('dotenv').config();
 var bodyParser= require("body-parser");
 
 const app=express();
 const port = process.env.PORT || 3000;
+const apiKey= process.env.Chimp_Key;
+
 app.use(bodyParser.urlencoded({extended:true}));
 
 app.use(express.static("static"));
@@ -39,7 +42,7 @@ app.post("/",function(req,res){
 
     const options={
         method:"POST",
-        auth:"harsh1:2abf69824976df4cae57922584a995ad-us21"
+        auth:"harsh1:"+apiKey
     }
 
     const request= https.request(url,options,function(response){
@@ -74,6 +77,7 @@ app.listen(port,function(){
 // api key
 //b03bf4d964a0aa58ed4e9bf828d4bd8c-us21
 //2abf69824976df4cae57922584a995ad-us21
+//d689d7de06709e8cba3596d456b9d98f-us21
 //user id mail chimp
 //9850b208f2
 
