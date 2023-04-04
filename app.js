@@ -36,7 +36,6 @@ app.post("/",function(req,res){
     const jsonData=JSON.stringify(data);
 
     const url= "https://us21.api.mailchimp.com/3.0/lists/9850b208f2";
-    //const url2="https://us21.api.mailchimp.com/3.0/campaigns/9850b208f2";
 
     const options={
         method:"POST",
@@ -76,3 +75,6 @@ app.listen(porcess.env.PORT || 3000,function(){
 //b03bf4d964a0aa58ed4e9bf828d4bd8c-us21
 //user id mail chimp
 //9850b208f2
+
+//url of app using cyclic
+//https://dark-pink-cod-robe.cyclic.app
