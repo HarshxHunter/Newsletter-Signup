@@ -75,9 +75,6 @@ app.listen(port,function(){
 
 
 // api key
-//b03bf4d964a0aa58ed4e9bf828d4bd8c-us21
-//2abf69824976df4cae57922584a995ad-us21
-//d689d7de06709e8cba3596d456b9d98f-us21
 //user id mail chimp
 //9850b208f2
 
