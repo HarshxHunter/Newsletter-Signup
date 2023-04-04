@@ -39,7 +39,7 @@ app.post("/",function(req,res){
 
     const options={
         method:"POST",
-        auth:"harsh1:b03bf4d964a0aa58ed4e9bf828d4bd8c-us21"
+        auth:"harsh1:2abf69824976df4cae57922584a995ad-us21"
     }
 
     const request= https.request(url,options,function(response){
@@ -71,8 +71,9 @@ app.listen(port,function(){
 });
 
 
-// api id
+// api key
 //b03bf4d964a0aa58ed4e9bf828d4bd8c-us21
+//2abf69824976df4cae57922584a995ad-us21
 //user id mail chimp
 //9850b208f2
 
